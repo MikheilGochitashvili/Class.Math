@@ -57,7 +57,6 @@ namespace Class.Math
         static void Main(string[] args)
         {
 
-
             int x = 3;
             int y = 12;
 
@@ -82,9 +81,12 @@ namespace Class.Math
                 Console.WriteLine($"before : {arr[i]}");
             }
 
-            for (int i = x; i < y; i++)
+            for(int i = x; i < y; i++)
             {
-                arr[i] = i;
+                for(int j = 0; j < arr.Length; ++j)
+                {
+                    arr[j] = i;
+                }
             }
 
             for (int i = 0; i < arr.Length; i++)
