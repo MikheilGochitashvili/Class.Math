@@ -30,26 +30,12 @@ namespace Class.Math
 
         public int Max (int x, int y)
         {
-            if(x > y)
-            {
-                return x;
-            } 
-            else
-            {
-                return y;
-            }
+            return x > y ? x : y; 
         }
 
         public int Min (int x, int y)
         {
-            if (x < y)
-            {
-                return x;
-            }
-            else
-            {
-                return y;
-            }
+            return x < y ? x : y;
         }
     }
 
@@ -60,10 +46,8 @@ namespace Class.Math
 
             Math math = new Math();
 
-
-            int minmax = math.Min(5, 21);
-
-            Console.WriteLine(minmax);
+ 
+            Console.WriteLine(math.Max(11, 7));
         }
     }
 }
